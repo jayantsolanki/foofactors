@@ -7,6 +7,8 @@
 #add license
 usethis::use_mit_license("Jane Doe")
 usethis::use_git()
+#before runing the below command make sure that this package is uploaded to github manually or check usethis::use_github() for more reference
+usethis::use_readme_rmd()
 #setting up testfolder
 usethis::use_testthat()
 
