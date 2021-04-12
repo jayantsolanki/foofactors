@@ -1,8 +1,16 @@
 #deployment, loading or rebuilding the package
+# Here is a typical sequence of calls when using devtools for package development:
+#
+#   1. Edit one or more files below R/.
+#   2. document() (if you’ve made any changes that impact help files or NAMESPACE)
+#   3. load_all()
+#   4. Run some examples interactively.
+#   5. test() (or test_file())
+#   6. check()
 
 #loading the package
 # RStudio exposes load_all() in the Build menu, in the Build pane via More > Load All
-devtools::load_all() #allows much faster iteration than actually building, installing, and attaching the package.
+devtools::load_all() #allows much faster iteration than actually building, installing, and attaching the package., you can always use this to test your package without having to install it before
 
 #load all documentation in rmd
 # RStudio exposes document() in the Build menu, in the Build pane via More > Document

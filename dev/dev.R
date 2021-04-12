@@ -18,6 +18,8 @@ usethis::use_testthat()
 
 #external dependencies
 usethis::use_package("forcats")
+# usethis::use_package("dplyr", "Suggests")
+#> Adding dplyr to Suggests
 
 
 #creating first R file
@@ -30,6 +32,10 @@ usethis::use_r("fcount")
 #create test file for above folder
 usethis::use_test("fcount")
 
+#creating internal function
+usethis::use_r("simpleprint")
+#create test file for above folder
+# usethis::use_test("fcount")
 
 
 
